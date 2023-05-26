@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    background-color: blueviolet;
+    line-height: 1.8;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 45px;
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
+    margin-left: 75px;
+}
+
+.logo {
+    font-size: 35px;
+    text-decoration: none;
+    color: white;
+}
+
+.header__nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav__btn {
+    color: white;
+    font-size: 35px;
+    text-decoration: none;
+    margin-right: 75px;
+
+}
+
+.stripe {
+    height: 6px;
+    width: 400px;
+    background-color: #000; /* Цвет полоски */
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content {
+    text-align: center;
+    margin-top: 95px;
+}
+
+.content h1 {
+    font-size: 50px;
+    color: white;
+    font-weight: 500;
+}
+
+.content h2 {
+    color: white;
+    font-size: 35px;
+    font-weight: 500;
+}
+
+@media (max-width: 1200px) {
+    .stripe {
+        height: 0.5vw;
+        width: 350px;
+    }
+    .logo {
+        font-size: 3.2vw;
+    }
+    .nav__btn {
+        font-size: 3.2vw;
+    }
+
+    .content {
+        margin-top: 120px;
+    }
+    .content h1 {
+        font-size: 3.5vw;
+    }
+    .content h2 {
+        font-size: 3.5vw;
+    }
+}
+
+@media (max-width: 1000px) {
+    .stripe {
+        height: 0.3vw;
+        width: 250px;
+    }
+    .logo {
+        font-size: 2.6vw;
+    }
+    .nav__btn {
+        font-size: 2.6vw;
+    }
+    .content {
+        margin-top: 100px;
+    }
+    .content h1 {
+        font-size: 3.6vw;
+    }
+    .content h2 {
+        font-size: 3.6vw;
+    }
+}
+
+@media (max-width: 768px) {
+    .stripe {
+        height: 0.6vw;
+        width: 200px;
+    }
+    .logo {
+        font-size: 2.8vw;
+    }
+    .nav__btn {
+        font-size: 2.8vw;
+    }
+    .content {
+        margin-top: 100px;
+    }
+    .content h1 {
+        font-size: 4.5vw;
+    }
+    .content h2 {
+        font-size: 4.5vw;
+    }
+}
+
+@media (max-width: 468px) {
+    .stripe {
+        height: 0.5vw;
+        width: 150px;
+    }
+    .logo {
+        font-size: 4.2vw;
+        margin-left: -50px;
+    }
+    .nav__btn {
+        font-size: 4.2vw;
+        margin-right: 25px;
+    }
+    .content {
+        margin-top: 90px;
+    }
+    .content h1 {
+        font-size: 5.9vw;
+    }
+    .content h2 {
+        font-size: 5.9vw;
+    }
+}
